@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 /* alert('Hello!') */
 console.log("hello! nice to see you");
 
@@ -81,7 +83,7 @@ console.log(myResult);
 console.log(dogAge);
 
 const greet = (dogName, dogAge, addedAge) => {
-  futureAge = dogAge + addedAge;
+  let futureAge = dogAge + addedAge;
   console.log(
     `Cześć jestem ${dogName} i mam ${dogAge}. A za ${addedAge} lata będę miała ${futureAge}`
   );
@@ -280,3 +282,10 @@ showTitle.addEventListener('click', () => {
   const title = document.querySelector('.note__title--js11')
   title.classList.toggle('note__title--off')
 })
+
+moment().format('MMMM Do YYYY, h:mm:ss a')
+
+const currentDate = moment().format('MMMM Do YYYY, h:mm:ss a')
+const date12 = document.querySelector('.date--js');
+date12.innerHTML = (`Hello marian o tej godnej godzinie ` + moment().format('MMMM Do YYYY, h:mm:ss a'))
+
