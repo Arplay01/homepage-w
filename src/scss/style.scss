@@ -2,10 +2,25 @@
 @import "_variables";
 @import "modules/note.scss";
 @import "modules/grid.scss";
+@import "modules/dark-mode1.scss";
+
+
 
 $background-color: #ffc6ac;
 $font-color: #014553;
 $article-background1: #333;
+
+:root {
+  --background: #ffc6ac;
+  --background-gradient: #77a69f;
+  --section-background: #eba6a9ff;
+  --section-background2: #ffc6ac;
+  --section-background3: #197fc4;
+  --font: #014553;
+  --font2: #002d36;
+  --font3: #571616;
+}
+
 
 html {
   box-sizing: border-box;
@@ -20,10 +35,10 @@ html {
 body {
   background: linear-gradient(
     179deg,
-    $background-color 93%,
-    rgba(119, 166, 159, 1) 100%
+    var(--background) 93%,
+    var(--background-gradient) 100%
   );
-  color: $font-color;
+  color: var(--font);
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
@@ -56,7 +71,6 @@ body {
   }
 }
 
-
 .pseudo__container {
   position: relative;
   width: 100%;
@@ -71,7 +85,7 @@ code {
 
 .footer {
   margin: 70px 20px;
-  text-align: center;;
+  text-align: center;
 }
 
 .form {
@@ -82,8 +96,6 @@ code {
 .file-sender {
   max-width: 100%;
 }
-
-
 
 .test--js4 {
   background-color: teal;
@@ -191,7 +203,7 @@ code {
 
   .note--box-model2 {
     max-width: 600px;
-    background-color: #ffc6ac;
+    background-color: var(--section-background);
     /* border: 0.5px solid #3333336e; */
     border-radius: 20px;
     padding: 20px;
@@ -255,7 +267,7 @@ code {
 
   .note--box-model2 {
     max-width: 600px;
-    background-color: #ffc6ac;
+    background-color: var(--section-background2);
     margin: 40px auto;
     /* border: 0.5px solid #3333336e; */
     border-radius: 20px;
@@ -274,11 +286,11 @@ code {
 
     &__link {
       text-decoration: none;
-      background: #ffc6ac;
+      background: var(--section-background2);
       /*   border: 1px solid #3333; */
       padding: 8px 12px;
       margin: 0 0 0 15px;
-      color: #571616;
+      color: var(--font3);
       border-radius: 30px;
       box-shadow: 8px 8px 18px 0px #d9a892, -8px -8px 26px 0px #ffe4c6;
     }
@@ -286,7 +298,4 @@ code {
       box-shadow: inset 4px 4px 12px #d9a892, inset -4px -4px 21px #ffe4c6;
     }
   }
-  
 }
-
-  

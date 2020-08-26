@@ -289,3 +289,50 @@ const currentDate = moment().format('MMMM Do YYYY, h:mm:ss a')
 const date12 = document.querySelector('.date--js');
 date12.innerHTML = (`Hello marian o tej godnej godzinie ` + moment().format('MMMM Do YYYY, h:mm:ss a'))
 
+const buttonDark1 = document.querySelector('.dark-mode1__button--js');
+let isDark1 = false;
+console.log(`hello isDark1`);
+
+buttonDark1.addEventListener('click', () => {
+    if (isDark1 === false) {
+        isDark1 = true;
+        document.documentElement.style.setProperty('--background1', '#002d36');
+        document.documentElement.style.setProperty('--font1', '#ffc6ac');
+        document.documentElement.style.setProperty('--section-background1', '#014553');
+        console.log('darkMode');
+    } else {
+        isDark1 = false;
+        document.documentElement.style.setProperty('--background1', '#ffc6ac');
+        document.documentElement.style.setProperty('--font1', '#014553');
+        document.documentElement.style.setProperty('--section-background1', '#ebeb11');
+        console.log('lightMode');
+    }
+})
+
+/* MAIN DARK MODE BELOW */
+
+const buttonDark2 = document.querySelector('.dark-mode2__button--js');
+let isDark2 = false;
+console.log(`hello isDark2`);
+
+buttonDark2.addEventListener('click', () => {
+    if (isDark2 === false) {
+        isDark2 = true;
+        document.documentElement.style.setProperty('--background', '#002d36');
+        document.documentElement.style.setProperty('--background-gradient', '#77a69f');
+        document.documentElement.style.setProperty('--font', '#ffc6ac');
+        document.documentElement.style.setProperty('--font3', '#eba6a9ff');
+        document.documentElement.style.setProperty('--section-background', '#197fc4');
+        document.documentElement.style.setProperty('--section-background2', '#197fc4');
+        console.log('darkMode');
+    } else {
+        isDark2 = false;
+        document.documentElement.style.setProperty('--background', '#ffc6ac');
+        document.documentElement.style.setProperty('--background-gradient', '#77a69f');
+        document.documentElement.style.setProperty('--font', '#014553');
+        document.documentElement.style.setProperty('--font3', '#571616');
+        document.documentElement.style.setProperty('--section-background', '#eba6a9ff');
+        document.documentElement.style.setProperty('--section-background2', '#ffc6ac');
+        console.log('lightMode');
+    }
+})

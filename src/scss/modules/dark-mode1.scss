@@ -1,0 +1,62 @@
+:root {
+  --background1: #ffc6ac;
+  --section-background1: #ebeb11;
+  --font1: #014553;
+  --font1: #002d36;
+}
+
+.dark-mode1__section {
+  background: var(--section-background1);
+  color: var(--font1);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dark-mode1__button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: none;
+}
+
+.dark-mode1__button::before {
+  content: "🌓";
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  left: -5px;
+  top: -3px;
+}
+
+.dark-mode1__article {
+  background: var(--background1) !important;
+  box-shadow: 0px 0px 10px !important,
+}
+
+
+.dark-mode2__button {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+  }
+  
+  .dark-mode2__button::before {
+    content: "🌓";
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    left: -5px;
+    top: -3px;
+  }
