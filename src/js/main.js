@@ -336,3 +336,6 @@ buttonDark2.addEventListener('click', () => {
         console.log('lightMode');
     }
 })
+
+const footerDate = document.querySelector('.footer__description--js');
+footerDate.innerHTML =  `Hello man this is: ${moment().format('MMMM Do YYYY, h:mm:ss a')}`;
