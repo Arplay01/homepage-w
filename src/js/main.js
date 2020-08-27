@@ -339,3 +339,12 @@ buttonDark2.addEventListener('click', () => {
 
 const footerDate = document.querySelector('.footer__description--js');
 footerDate.innerHTML =  `Hello man this is: ${moment().format('MMMM Do YYYY, h:mm:ss a')}`;
+
+const emptyText = document.querySelector('.empty-note--js');
+
+function addContent(querySelectorElement, newClass, content) {
+  document.querySelector(querySelectorElement).classList.add(newClass)
+  document.querySelector(querySelectorElement).innerHTML = content;
+} 
+
+addContent('.empty-note--js', 'note--box-model2', 'Paragraf dodany dla przećwiczenia funkcji i innych. Enjoy! 😊.')
