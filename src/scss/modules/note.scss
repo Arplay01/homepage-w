@@ -34,17 +34,21 @@
       }
       &--box-model-logo {
         max-width: 100%;
+        width: 100%;
         z-index: 3000;
         position: relative;
       }
       &--box-model-logo--js {
         background: #ffc6ac;
+        max-width: 100%;
+        width: 100%;
         padding: 10px;
         border-radius: 100%;
         box-shadow: 6px 6px 16px 0px #d9a892, -6px -6px 26px 0px #ffe4c6;
       }
       &--phone {
         max-width: 100%;
+        width: 100%;
       }
     }
   
