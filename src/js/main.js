@@ -348,3 +348,12 @@ function addContent(querySelectorElement, newClass, content) {
 } 
 
 addContent('.empty-note--js', 'note--box-model2', 'Paragraf dodany dla przećwiczenia funkcji i innych. Enjoy! 😊.')
+
+const showParagraph = document.querySelector('.showParagraph--js');
+
+showParagraph.addEventListener('click', () => {
+  const paragraphClass = document.querySelector('.note__description--js8');
+  paragraphClass.classList.toggle('note__description--js8-off');
+  const newParagraph = document.querySelector('.note__description--js8');
+  newParagraph.innerHTML = 'Mega przydatne jest robienie planningów, Review i Retro, oraz praca nad backlogiem. A potem rzetelna praca w sprincie. :) Mozna powiedzieć, że praca leci!'
+})
