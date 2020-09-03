@@ -357,3 +357,26 @@ showParagraph.addEventListener('click', () => {
   const newParagraph = document.querySelector('.note__description--js8');
   newParagraph.innerHTML = 'Mega przydatne jest robienie planningów, Review i Retro, oraz praca nad backlogiem. A potem rzetelna praca w sprincie. :) Mozna powiedzieć, że praca leci!'
 })
+
+const newArray = ['🌷','🌞','💧','🌈','🔥','🌷']
+
+console.log(newArray);
+console.log(newArray[0]);
+console.log(newArray.length);
+console.log(newArray.push('🥦'));
+console.log(newArray);
+console.log(newArray.unshift('🥦'));
+console.log(newArray);
+console.log(newArray.shift('🥦'));
+console.log(newArray);
+console.log(newArray.pop('🥦'));
+console.log(newArray);
+console.log(newArray.indexOf('🌷'));
+console.log(newArray);
+console.log(newArray.splice(1, 2));
+console.log(newArray);
+console.log(newArray.slice(1, 3));
+
+
+const arrayParagraph = document.querySelector('.array--js');
+arrayParagraph.innerHTML = newArray.length;
