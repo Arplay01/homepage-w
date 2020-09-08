@@ -3,9 +3,7 @@
 @import "modules/note.scss";
 @import "modules/grid.scss";
 @import "modules/dark-mode1.scss";
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 
 $background-color: #ffc6ac;
 $font-color: #014553;
@@ -21,7 +19,6 @@ $article-background1: #333;
   --font2: #002d36;
   --font3: #571616;
 }
-
 
 html {
   box-sizing: border-box;
@@ -40,7 +37,7 @@ body {
     var(--background-gradient) 100%
   );
   color: var(--font);
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 1.1rem;
